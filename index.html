@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#243d2d" />
+    <title>今天，刚好是你</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Noto+Serif+SC:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="grain" aria-hidden="true"></div><div class="cursor-glow" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><span></span></div>
+    <button class="sound-toggle" type="button" aria-pressed="false"><span class="sound-icon">✦</span><span class="sound-label">SOUND OFF</span></button>
+    <!-- 将 assets/ambient.mp3 替换为自己的环境音乐。 -->
+    <audio id="ambient" loop preload="none"><source src="assets/ambient.mp3" type="audio/mpeg" /></audio>
+    <main>
+      <section class="hero section-dark">
+        <div class="hero-meta mono">A PRIVATE RECORD &nbsp;·&nbsp; 2026</div>
+        <div class="hero-copy reveal"><p class="date mono">2026.09.25</p><h1>今天，<br /><em>刚好是你。</em></h1><p class="intro">世界照常运行。<br />只是今天，有一个人值得被好好记住。</p></div>
+        <div class="scroll-cue mono">SCROLL TO BEGIN <span>↓</span></div>
+      </section>
+      <section class="time-section section-dark chapter">
+        <header class="chapter-header reveal"><span class="mono">CHAPTER 01</span><h2>TIME</h2></header>
+        <div class="time-opening reveal"><p>我们总觉得日子很长。</p><p>可当它真的过去以后，<br />才发现，它只是由一些很普通的日子组成。</p></div>
+        <ol class="timeline">
+          <li class="timeline-item reveal"><span class="year">2025</span><p>故事还没有名字。<br />但你已经在向今天走来。</p></li>
+          <li class="timeline-item reveal"><span class="year">12月</span><p>一些路变得熟悉，<br />一些问题开始有了自己的答案。</p></li>
+          <li class="timeline-item reveal"><span class="year">2月</span><p>在并不特别的傍晚，<br />你也曾把日子过得闪闪发亮。</p></li>
+          <li class="timeline-item reveal"><span class="year">5月</span><p>有些人靠近，<br />有些风景被留在身后。</p></li>
+          <li class="timeline-item now reveal"><span class="year">9月25日</span><p>仍然在成为，<br /><em>仍然是你。</em></p></li>
+        </ol>
+      </section>
+      <section class="you-section section-light chapter">
+        <header class="chapter-header reveal"><span class="mono">CHAPTER 02</span><h2>YOU</h2></header>
+        <div class="you-lead reveal">如果要用一些东西来描述你，<br />我大概不会从生日开始。</div>
+        <div class="traits"><p class="trait reveal">你喜欢的电影，你讨厌我的《晒后假日》</p><p class="trait reveal">你说过的话～放屁咧～</p><p class="trait reveal">你破马张飞笑的时候</p><p class="trait large reveal">你不说话的时候</p><p class="trait reveal">你突然认真起来的时候</p><p class="trait reveal">你说我的时候</p><p class="trait final reveal">还有那些你自己<br />都没有注意到的小习惯。</p></div>
+      </section>
+      <section class="gallery section-dark chapter">
+        <header class="chapter-header reveal"><span class="mono">SELECTED FRAMES</span><h2>MEMORY<br />IN MOTION</h2></header>
+        <!-- 将 data-image 改成你的图片路径，例如 assets/photo-01.jpg。 -->
+        <article class="frame frame-a reveal" data-image="assets/1.png"><div class="photo-placeholder"><span class="mono">PHOTO 01<br />assets/1.png</span></div><div class="frame-caption mono"><b>IMG_0247</b><span>23:41 — 光刚好落在你的肩上。</span></div></article>
+        <article class="frame frame-b reveal" data-image="assets/2.png"><div class="photo-placeholder"><span class="mono">PHOTO 02<br />assets/2.png</span></div><div class="frame-caption mono"><b>IMG_0318</b><span>那天其实没有发生什么。</span></div></article>
+        <article class="frame frame-c reveal" data-image="assets/3.png"><div class="photo-placeholder"><span class="mono">PHOTO 03<br />assets/3.png</span></div><div class="frame-caption mono"><b>IMG_0442</b><span>但是我记得。</span></div></article>
+        <article class="frame frame-a reveal" data-image="assets/4.png"><div class="photo-placeholder"><span class="mono">PHOTO 04<br />assets/4.png</span></div><div class="frame-caption mono"><b>IMG_0501</b><span>这一秒，也值得被留下。</span></div></article>
+        <article class="frame frame-b reveal" data-image="assets/5.png"><div class="photo-placeholder"><span class="mono">PHOTO 05<br />assets/5.png</span></div><div class="frame-caption mono"><b>IMG_0525</b><span>于是，记忆有了颜色。</span></div></article>
+      </section>
+      <section class="unkept section-light chapter">
+        <header class="chapter-header reveal"><span class="mono">CHAPTER 03</span><h2>THINGS WE<br /><em>DIDN'T KEEP</em></h2></header>
+        <div class="unkept-note note-one reveal"><span class="mono">17:32</span><p>你当时说了什么，<br />我已经记不清了。<br /><br />但我记得那时候很开心。</p></div>
+        <div class="unkept-empty"><p class="reveal">有一些东西没有被拍下来。</p></div>
+        <div class="unkept-note note-two reveal"><span class="mono">02:16</span><p>那天晚上没有照片。<br />所以这一页，什么都没有。</p></div><p class="unkept-close reveal">有些记忆不需要证据。</p>
+      </section>
+      <section class="ending section-dark chapter">
+        <header class="chapter-header reveal"><span class="mono">CHAPTER 04</span><h2>ANOTHER<br />YEAR</h2></header>
+        <div class="wish reveal"><p class="mono">CUT TO BLACK.</p><h3>今天没有什么大道理。</h3><p>只是想告诉你：</p><p class="wish-main">很高兴你来到这个世界上<br />南瓜玲。</p><p>愿下一年，仍有值得期待的清晨，<br />有突然笑出来的下午，<br />有一些不需要解释的夜晚。</p><p class="birthday">生日快乐小玲。</p></div>
+        <button class="replay mono" type="button">REPLAY <span>↗</span></button><footer class="mono">MADE WITH ATTENTION · FOR YOU</footer>
+      </section>
+    </main><script src="script.js"></script>
+  </body>
+</html>
